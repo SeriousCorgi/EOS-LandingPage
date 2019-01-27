@@ -6,11 +6,13 @@
 		<div class="articles">
 			{% for article in articles reversed %}
 				<div class="article">
-					<h2 class="title"><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
-					<p class="description">{{ article.snippet }}</p>
-					<p class="date">{{ article.date }}</p>
-					<p class="author">Posted by <span>{{ article.author }}</span></p>
+					<a href="{% url 'articles:detail' slug=article.slug %}">
+						<h2 class="title">{{ article.title }}</h2>
+						<h3 class="description">{{ article.snippet }}</h3>
+					</a>
+					<p class="meta">Posted by {{ article.author }} on {{ article.date }}</p>
 				</div>
+				<hr>
 			{% endfor %}
 		</div>
 	</div>
