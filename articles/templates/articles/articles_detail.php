@@ -2,13 +2,19 @@
 {% block title %}Article{% endblock %}
 
 {% block content %}
-	<div class="wrapper article-detail">
-		<div class="article">
-			<div class="image"><img src="{{ article.image.url }}"></div>
-			<h2 class="title">{{ article.title }}</h2>
-			<p class="body">{{ article.body }}</p>
-			<p class="date">{{ article.date }}</p>
-			<p class="author">Posted by <span>{{ article.author }}</span></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<!-- Article Content-->
+				<div class="article-detail">
+					<div class="image"><img src="{{ article.image.url }}" class="img-thumbnail"></div>
+					<h2 class="title">{{ article.title }}</h2>
+					<p class="body">{{ article.body }}</p>
+					<p class="meta">Posted by <a class="author" href="#">{{ article.author }}</a> on {{ article.date }}</p>
+				</div>
+
+			</div>
 		</div>
 	</div>
 {% endblock %}

@@ -51,7 +51,7 @@
 						<a href="{% url 'home' %}">Home</a>
 					</li>
 					<li class="dropdown dropdown-custom">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="https://petro.wovodat.org:4444">Petrology Workspace & Database</a></li>
 							<li><a href="https://petro.wovodat.org/cemin.php">Lilu’s web interface</a></li>
@@ -85,10 +85,12 @@
 	<header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Images/Picture1.png' %})">
 		<div class="container">
 			<div class="row">
-				<div class="site-heading">
-					<h1><img alt="">Earth Observatory of Singapore</h1>
-					<hr class="small">
-					<span class="sub-heading">Volcano Petrology Group - Web Application</span>
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="site-heading">
+						<h1><img alt="">Earth Observatory of Singapore</h1>
+						<hr class="small">
+						<span class="sub-heading">Volcano Petrology Group - Web Application</span>
+					</div>
 				</div>
 			</div>
 		</div>

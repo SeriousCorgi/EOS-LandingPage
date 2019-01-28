@@ -1,3 +1,9 @@
+body{
+    font-family: Lora, 'Times New Roman', serif;
+    font-size: 20px;
+    -webkit-tap-highlight-color: #0085A1
+}
+
 .intro-header .page-heading .sub-heading, .intro-header .post-heading .subheading, .intro-header .site-heading .sub-heading, .navbar-custom, h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -13,8 +19,9 @@ a:hover, a:focus {
 
 p {
     line-height: 1.5;
-    margin: 30px 0
+    margin: 30px 0;
 }
+
 
 /*Navigation*/
 .navbar-custom {
@@ -70,19 +77,19 @@ li > form > a {
 	.navbar-custom .nav li ul.dropdown-menu a:focus, .navbar-custom .nav li ul.dropdown-menu a:hover {
 	    color: #0085A1
 	}
-    
+
     .dropdown-custom > a[aria-expanded="true"] {
         color: #0085A1 !important;
-        background-color: rgb(245,245,245) !important; 
+        background-color: rgb(245,245,245) !important;
     }
-    
+
     .dropdown-custom > a[aria-expanded="true"] > span.caret{
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         border-top: 0;
         border-bottom: 4px solid #0085A1;
     }
-    
+
     .dropdown-custom > .dropdown-menu {
         border: none;
         padding: 0;
@@ -134,6 +141,7 @@ li > form > a {
     }
 }
 
+
 /*Page Header*/
 .intro-header {
     background: center center no-repeat;
@@ -172,10 +180,71 @@ hr.small {
 }
 
 @media only screen and (min-width:768px) {
-    .intro-header .page-heading, .intro-header .post-heading, .intro-header .site-heading {
-        padding: 150px 0;
+	.intro-header .site-heading {
+        padding: 130px 0;
     }
-    .intro-header .page-heading h1, .intro-header .site-heading h1 {
+	.intro-header .site-heading h1 {
         font-size: 70px
     }
+}
+
+
+/*Article List*/
+article-preview > a {
+    color: #333
+}
+
+article-preview > a:focus, article-preview > a:hover {
+    text-decoration: none;
+    color: #0085A1
+}
+
+.article-preview > a > .title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.article-preview > a > .description {
+    margin: 0 0 10px;
+    font-weight: 300;
+}
+
+.article-preview > .meta {
+    color: #777;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.article-preview > .meta > a {
+    text-decoration: none;
+    color: #333
+}
+
+.article-preview > .meta > a:focus, .article-preview > .meta > a:hover {
+    color: #0085A1;
+    text-decoration: underline;
+}
+
+
+/*Article Detail*/
+.article-detail > .title {
+    font-size: 36px;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.article-detail > .body {
+    
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
 }
