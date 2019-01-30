@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'LandingPage.urls'
+ROOT_URLCONF = 'EOS-LandingPage.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'LandingPage.wsgi.application'
+WSGI_APPLICATION = 'EOS-LandingPage.wsgi.application'
 
 
 # Database

@@ -236,7 +236,24 @@ article-preview > a:focus, article-preview > a:hover {
 }
 
 .article-detail > .body {
-    
+
+}
+
+.article-detail > .meta {
+    color: #777;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.article-detail > .meta > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.article-detail > .meta > a:focus, .article-detail > .meta > a:hover {
+    color: #0085A1;
+    text-decoration: underline;
 }
 
 img::selection {
@@ -248,3 +265,10 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+
+/*Sign Up*/
+
+
+
+/*Log In*/
