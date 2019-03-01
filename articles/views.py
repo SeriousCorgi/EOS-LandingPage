@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
 from .models import Article
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from . import forms
-
 
 def articleList(request):
 	articles = Article.objects.all().order_by('date')
@@ -29,4 +29,24 @@ def articleCreate(request):
 	# end if
 
 	return render(request, 'articles/articles_create.php', {'form': form})
+# end def
+
+def emailDispatch(request):
+	if request.method == 'POST':
+		name = request.POST['name']
+		email = request.POST['email']
+		institution = request.POST['institution']
+		comments = request.POST['comments']
+
+		subject = "Petrodology comment - " + name
+		message = "Name: " + name + "\nEmail: " + email + "\nInstitution: " + institution + "\n\nComment:\n" + comments
+		send_mail(
+			subject = subject,
+			message = message,
+			from_email = "",
+			recipient_list = [''],
+			fail_silently = False,
+		)
+		return HttpResponse('')
+	# end if
 # end def

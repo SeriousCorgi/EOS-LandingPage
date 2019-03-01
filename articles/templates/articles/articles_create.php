@@ -2,7 +2,7 @@
 {% block title %}New Article{% endblock %}
 {% load static from staticfiles %}
 {% block script %}
-	<script src="{% static 'Scripts/slugify.js' %}"></script>
+	<script src="{% static 'js/slugify.js' %}"></script>
 {% endblock %}
 
 {% block content %}

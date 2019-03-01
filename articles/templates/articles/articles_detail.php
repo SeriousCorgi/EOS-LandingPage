@@ -11,7 +11,7 @@
 					<div class="image"><img src="{{ article.image.url }}" class="img-thumbnail"></div>
 					<h2 class="title">{{ article.title }}</h2>
 					<p class="body">{{ article.body }}</p>
-					<p class="meta">Posted by <a class="author" href="#">{{ article.author }}</a> on {{ article.date }}</p>
+					<p class="meta">Posted on {{ article.date }}</p>
 				</div>
 
 			</div>
